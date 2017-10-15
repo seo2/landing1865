@@ -1,0 +1,52 @@
+@import url('../fonts/font.css');
+html,body{height: 100%; width: 100%;}
+
+
+body{background: #000; color: #fff;}
+
+nav{background: rgba(0,0,0,0.5); }
+
+.navigation{
+	-webkit-backface-visibility: hidden;
+	z-index: 5;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	margin-top: -40px;
+}
+.navigation ul{padding: 0; margin: 0;}
+
+.navigation li{
+	height: 50px;
+}
+
+.navigation a{
+	display: block;
+	width: 8px;
+	height: 8px;
+	text-indent: -9999px;
+	border-radius:25px;
+	background-color:#333333;
+}
+
+.navigation a:hover{
+	border-radius:25px;
+	background-color:#b6a47d;
+}
+.navigation a.active{
+	border-radius:25px;
+	background-color:#b6a47d;
+}
+
+
+
+.baja{position: absolute; bottom: 20px;left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%);    width: 40px;}
+
+section{height: 100%; width: 100%;}
+#home{background: url(../img/bg-home.jpg) no-repeat; background-size: cover; }
+
+#titulo{position: absolute; right: 4%; top: 30%;}
+
+h1 {font-family: "trajan-pro-3";font-size: 6rem;}
+h2{font-family: 'Nexa Bold'; font-size: 1.2rem; padding: 0 14px 0 6px;}
+h2 span{font-family: 'Nexa Light';}
