@@ -14,20 +14,22 @@
     
     
   </head>
-<body>
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+<body data-spy="scroll" data-target="#navbar-example">
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top text-uppercase" id="navbar-example">
 		<div class="container">
-			<a class="navbar-brand" href="#">Fixed navbar</a>
+			<a class="navbar-brand" href="#home">
+				<img src="assets/img/logo-slogan-head.png" class="img-fluid">
+			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					<li class="nav-item">
+						<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Variedades</a>
+						<a class="nav-link" href="#variedades">Variedades</a>
 					</li>
 				</ul>
 			</div>
@@ -36,10 +38,13 @@
 	 
 	<div class="navigation">
 		<ul>
-			<li><a href="#home" class="active">one</a></li>
-			<li><a href="#variedades">two</a></li>
-			<li><a href="#cabernet">three</a></li>
-			<li><a href="#carmenere">four</a></li>
+			<li><a href="#home" class="active" data-toggle="tooltip" data-placement="right" title="Home">Home</a></li>
+			<li><a href="#variedades" 	data-toggle="tooltip" data-placement="right" title="Variedades">Variedades</a></li>
+			<li><a href="#cabernet" 	data-toggle="tooltip" data-placement="right" title="Cabernet Sauvignon">three</a></li>
+			<li><a href="#carmenere" 	data-toggle="tooltip" data-placement="right" title="Carmenere">four</a></li>
+			<li><a href="#malbec" 		data-toggle="tooltip" data-placement="right" title="Malbec">four</a></li>
+			<li><a href="#sauvignon" 	data-toggle="tooltip" data-placement="right" title="Sauvignon Blanc">four</a></li>
+			<li><a href="#syrah" 	data-toggle="tooltip" data-placement="right" title="Syrah">four</a></li>
 		</ul>
 	</div>	
 
@@ -52,14 +57,35 @@
 			<h2 class="text-right text-uppercase"><span>desde su elaboración</span></h2>
 		</hgroup>
 
-		<a href="javascript:void(0);" id="baja1" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
+		<a href="#variedades" id="baja1" class="baja" ><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
 
     </section>
 	  
 	  
     <section id="variedades">
 	    
+	    <div class="container">
+		    <div class="row">
+		    	<div class="col-sm-2">
+		    		<img src="assets/img/logo-1865.png" class="img-fluid logo-1865">
+		    	</div>
+		    </div>
+		    <div class="row">
+				<div class="caja-texto col-sm-7">
+					<div class="row">
+						<div class="col-sm-6">
+							<h3>Variedades</h3>
+							<p>Nuestros vinos concentran y reflejan todo el conocimiento, cuidado e historia enológica de San Pedro. 1865 es el exponente de la precisión enológica, que deslumbra por sus variados reconocimientos y premios a nivel mundial.</p>
+						</div>
+						<div class="col-sm-6 nopadr">
+							<img src="assets/img/foto-variedades.jpg" class="img-fluid">
+						</div>
+					</div>
+				</div>
+		    </div>
+	    </div>
 
+		<a href="#cabernet" id="baja2" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
 
     </section>
 	  
@@ -67,13 +93,37 @@
     <section id="cabernet">
 	    
 
+	    
+
+
+		<a href="#carmenere" id="baja3" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
 
     </section>
 	  
 	  
     <section id="carmenere">
 	    
+		<a href="#malbec" id="baja4" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
 
+    </section>
+	  
+	  
+    <section id="malbec">
+	    
+		<a href="#sauvignon" id="baja5" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
+
+    </section>
+	  
+	  
+    <section id="sauvignon">
+	    
+		<a href="#syrah" id="baja6" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
+
+    </section>
+	  
+	  
+    <section id="syrah">
+	    
 
     </section>
 

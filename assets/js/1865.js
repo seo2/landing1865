@@ -32,3 +32,5 @@ $(document).on('scroll', function() {
 		$(this).addClass('active');
 });   
 /// FIN NAVEGACIÓN CON PUNTOS
+
+$('[data-toggle="tooltip"]').tooltip();

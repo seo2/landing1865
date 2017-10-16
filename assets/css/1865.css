@@ -2,9 +2,11 @@
 html,body{height: 100%; width: 100%;}
 
 
-body{background: #000; color: #fff;}
+body{background: #000; color: #fff; position: relative; text-transform: uppercase;}
 
-nav{background: rgba(0,0,0,0.5); }
+nav{background: rgba(0,0,0,0.5); font-family: 'Nexa Bold'; font-size: 0.8rem;}
+
+.nopadr{padding-right: 0;}
 
 .navigation{
 	-webkit-backface-visibility: hidden;
@@ -38,11 +40,12 @@ nav{background: rgba(0,0,0,0.5); }
 	background-color:#b6a47d;
 }
 
+.tooltip-inner{font-family: 'Nexa Book'; font-size: 0.6rem;}
 
 
 .baja{position: absolute; bottom: 20px;left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%);    width: 40px;}
 
-section{height: 100%; width: 100%;}
+section{height: 100%; width: 100%; position: relative;}
 #home{background: url(../img/bg-home.jpg) no-repeat; background-size: cover; }
 
 #titulo{position: absolute; right: 4%; top: 30%;}
@@ -50,3 +53,16 @@ section{height: 100%; width: 100%;}
 h1 {font-family: "trajan-pro-3";font-size: 6rem;}
 h2{font-family: 'Nexa Bold'; font-size: 1.2rem; padding: 0 14px 0 6px;}
 h2 span{font-family: 'Nexa Light';}
+
+#variedades{background: url(../img/bg-variedades.jpg) no-repeat; background-size: cover;}
+#variedades .logo-1865{margin: 120px 0 20px;}
+#variedades .caja-texto{background: rgba(0,0,0,0.5); border-left: 3px solid #fff;}
+#variedades .caja-texto h3{font-family: 'Nexa Bold'; margin: 30px 0; font-size: 20px;}
+#variedades .caja-texto p{font-family: 'Nexa Regular'; font-size: 0.7rem;line-height: 230%;}
+
+#cabernet{background: url(../img/bg-cabernet.jpg) no-repeat; background-size: cover;}
+#carmenere{background: url(../img/bg-carmenere.jpg) no-repeat; background-size: cover;}
+#malbec{background: url(../img/bg-malbec.jpg) no-repeat; background-size: cover;}
+#sauvignon{background: url(../img/bg-sauvignon.jpg) no-repeat; background-size: cover;}
+#syrah{background: url(../img/bg-syrah.jpg) no-repeat; background-size: cover;}
+
