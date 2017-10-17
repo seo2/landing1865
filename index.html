@@ -10,9 +10,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/1865.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     
-    
-    
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108195332-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-108195332-1');
+	</script>
+   
   </head>
 <body data-spy="scroll" data-target="#navbar-example">
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top text-uppercase" id="navbar-example">
@@ -44,7 +53,7 @@
 			<li><a href="#carmenere" 	data-toggle="tooltip" data-placement="right" title="Carmenere">four</a></li>
 			<li><a href="#malbec" 		data-toggle="tooltip" data-placement="right" title="Malbec">four</a></li>
 			<li><a href="#sauvignon" 	data-toggle="tooltip" data-placement="right" title="Sauvignon Blanc">four</a></li>
-			<li><a href="#syrah" 	data-toggle="tooltip" data-placement="right" title="Syrah">four</a></li>
+			<li><a href="#syrah" 		data-toggle="tooltip" data-placement="right" title="Syrah">four</a></li>
 		</ul>
 	</div>	
 
@@ -64,23 +73,40 @@
 	  
     <section id="variedades">
 	    
-	    <div class="container">
+	    <div class="container d-none d-sm-block">
 		    <div class="row">
-		    	<div class="col-sm-2">
+		    	<div class="col-4 col-sm-2">
 		    		<img src="assets/img/logo-1865.png" class="img-fluid logo-1865">
 		    	</div>
 		    </div>
 		    <div class="row">
 				<div class="caja-texto col-sm-7">
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-6">
 							<h3>Variedades</h3>
 							<p>Nuestros vinos concentran y reflejan todo el conocimiento, cuidado e historia enológica de San Pedro. 1865 es el exponente de la precisión enológica, que deslumbra por sus variados reconocimientos y premios a nivel mundial.</p>
 						</div>
-						<div class="col-sm-6 nopadr">
+						<div class="col-6 nopadr">
 							<img src="assets/img/foto-variedades.jpg" class="img-fluid">
 						</div>
 					</div>
+				</div>
+		    </div>
+	    </div>
+	    
+	    <div class="container d-block d-sm-none">
+		    <div class="row">
+				<div class="col-8">
+					<h3>Variedades</h3>
+					<p>Nuestros vinos concentran y reflejan todo el conocimiento, cuidado e historia enológica de San Pedro. 1865 es el exponente de la precisión enológica, que deslumbra por sus variados reconocimientos y premios a nivel mundial.</p>
+				</div>
+		    	<div class="col-4">
+		    		<img src="assets/img/logo-1865.png" class="img-fluid logo-1865">
+		    	</div>
+		    </div>
+		    <div class="row">
+				<div class="col-8">
+					<img src="assets/img/foto-variedades.jpg" class="img-fluid">
 				</div>
 		    </div>
 	    </div>
@@ -92,16 +118,66 @@
 	  
     <section id="cabernet">
 	    
-
-	    
-
-
+	   	<div class="vino container">
+	   		<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-4 col-sm-4">
+							<img src="assets/img/botella-cabernet.png" class="img-fluid botella">
+						</div>
+						<div class="col-7 col-sm-7 ml-auto ficha">
+							<div class="row">
+								<div class="col-6 col-sm-6">
+									<img src="assets/img/logo-1865.png" class="img-fluid logo-1865 negativo">
+								</div>
+							</div>
+							<hgroup class="cepa">
+								<h3><span class="negativo">Cabernet</span><br>Sauvignon</h3>
+							</hgroup>
+							<p><strong>Color:</strong> rojo rubí, intenso, profundo y tonos violáceos.</p>
+							<p><strong>Aroma:</strong> elegantes e intensos aromas a frutas rojas maduras como guindas, ciruelas y arándanos, que se entremezclan con notas chocolatadas, moka y cedro.</p>
+							<p><strong>Paladar:</strong> denso y concentrado, con taninos presentes y a la vez maduros. Presenta un muy buen balance entre taninos, acidez y madera. </p>
+							<p>Ideal para acompañar carnes rojas y quesos fuertes. </p>
+		
+						</div>
+					</div>
+				</div>
+	   		</div>	
+	   	</div>
+	   	
 		<a href="#carmenere" id="baja3" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
 
     </section>
 	  
 	  
     <section id="carmenere">
+	    
+	   	<div class="vino container">
+	   		<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-4 col-sm-4">
+							<img src="assets/img/botella-cabernet.png" class="img-fluid botella">
+						</div>
+						<div class="col-7 col-sm-7 ml-auto ficha">
+							<div class="row">
+								<div class="col-6 col-sm-6">
+									<img src="assets/img/logo-1865.png" class="img-fluid logo-1865 negativo">
+								</div>
+							</div>
+							<hgroup class="cepa">
+								<h3><span class="negativo">Carmenère</span></h3>
+							</hgroup>
+							<p><strong>Color:</strong> rojo rubí, intenso, profundo y tonos violáceos.</p>
+							<p><strong>Aroma:</strong> presenta notas frutales a moras, ciruelas y cerezas negras, con un toque sutil a pimienta negra, vainilla, chocolate y tabaco.</p>
+							<p><strong>Paladar:</strong> buen volumen en boca. graso, con una buena presencia de taninos maduros que portan suavidad y redondez. buena estructura y acidez, que da paso a un prolongado y persistente final.</p>
+							<p>Ideal para acompañar carnes asadas, risotto y quesos maduros</p>
+							
+						</div>
+					</div>
+				</div>
+	   		</div>	
+	   	</div>
 	    
 		<a href="#malbec" id="baja4" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
 
@@ -110,6 +186,33 @@
 	  
     <section id="malbec">
 	    
+	   	<div class="vino container">
+	   		<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-4 col-sm-4">
+							<img src="assets/img/botella-malbec.png" class="img-fluid botella">
+						</div>
+						<div class="col-7 col-sm-7 ml-auto ficha">
+							<div class="row">
+								<div class="col-6 col-sm-6">
+									<img src="assets/img/logo-1865.png" class="img-fluid logo-1865 negativo">
+								</div>
+							</div>
+							<hgroup class="cepa">
+								<h3><span class="negativo">Malbec</span></h3>
+							</hgroup>
+							<p><strong>Color:</strong> Intenso y profundo color rojo rubí, con matices violetas.
+							<p><strong>Aroma:</strong> gran intensidad aromática, marcada por frutos negros como arándanos y ciruelas, combinadas con aromas tostados y ahumados, y sutiles notas a vainilla, chocolate y violeta.</p>
+							<p><strong>Paladar:</strong> un vino intenso, equilibrado, concentrado, con muy buena estructura y acidez, con taninos maduros, dulces y suaves. presenta un final intenso y prolongado.</p>
+							<p>Ideal para acompañar carnes rojas y quesos cremosos.</p>
+							
+						</div>
+					</div>
+				</div>
+	   		</div>	
+	   	</div>
+	    
 		<a href="#sauvignon" id="baja5" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
 
     </section>
@@ -117,12 +220,64 @@
 	  
     <section id="sauvignon">
 	    
+	   	<div class="vino container">
+	   		<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-4 col-sm-4">
+							<img src="assets/img/botella-sauvignon.png" class="img-fluid botella">
+						</div>
+						<div class="col-7 col-sm-7 ml-auto ficha">
+							<div class="row">
+								<div class="col-6 col-sm-6">
+									<img src="assets/img/logo-1865.png" class="img-fluid logo-1865 negativo">
+								</div>
+							</div>
+							<hgroup class="cepa">
+								<h3 class="negativo">Sauvignon<br>Blanc</h3>
+							</hgroup>
+							<p><strong>Color:</strong> amarillo pálido casi transparente, con matices verdes y muy brillante.
+							<p><strong>Aroma:</strong> frutas cítricas como pomelo, espárrago blanco, arvejas dulces, notas minerales y leves notas a ají.</p>
+							<p><strong>Paladar:</strong> fresco, frutal de extraordinario volumen, mineral, una acidez marcada y de prolongado final. </p>
+							<p>Ideal para acompañar ostras, centolla y todo tipo de mariscos.</p>
+						</div>
+					</div>
+				</div>
+	   		</div>	
+	   	</div>
+	    
 		<a href="#syrah" id="baja6" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
 
     </section>
 	  
 	  
     <section id="syrah">
+	    
+	   	<div class="vino container">
+	   		<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-4 col-sm-4">
+							<img src="assets/img/botella-syrah.png" class="img-fluid botella">
+						</div>
+						<div class="col-7 col-sm-7 ml-auto ficha">
+							<div class="row">
+								<div class="col-6 col-sm-6">
+									<img src="assets/img/logo-1865.png" class="img-fluid logo-1865 negativo">
+								</div>
+							</div>
+							<hgroup class="cepa">
+								<h3 class="negativo">Syrah</h3>
+							</hgroup>
+							<p><strong>Color:</strong> rojo violáceo intenso, profundo y matices morados.
+							<p><strong>Aroma:</strong> elegante, frutal y a la vez especiado, donde destacan las moras, cerezas y confituras de ciruelas, entremezcladas con aromas dulces y maduros, y con notas sutiles de tabaco rubio y chocolate.</p>
+							<p><strong>Paladar:</strong> gran estructura, cuerpo generoso y graso, a la vez con mucha fruta, buen equilibrio y buena acidez, que dan paso a un final levemente ahumado, largo y muy persistente.</p>
+							<p>Ideal para acompañar asado de cordero, carnes rojas, guisos y quesos maduros.</p>
+						</div>
+					</div>
+				</div>
+	   		</div>	
+	   	</div>
 	    
 
     </section>

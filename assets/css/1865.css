@@ -7,7 +7,7 @@ body{background: #000; color: #fff; position: relative; text-transform: uppercas
 nav{background: rgba(0,0,0,0.5); font-family: 'Nexa Bold'; font-size: 0.8rem;}
 
 .nopadr{padding-right: 0;}
-
+.negativo{margin-left: -50px;}
 .navigation{
 	-webkit-backface-visibility: hidden;
 	z-index: 5;
@@ -16,7 +16,7 @@ nav{background: rgba(0,0,0,0.5); font-family: 'Nexa Bold'; font-size: 0.8rem;}
 	left: 20px;
 	margin-top: -40px;
 }
-.navigation ul{padding: 0; margin: 0;}
+.navigation ul{padding: 0; margin: 0; list-style: none;}
 
 .navigation li{
 	height: 50px;
@@ -57,12 +57,66 @@ h2 span{font-family: 'Nexa Light';}
 #variedades{background: url(../img/bg-variedades.jpg) no-repeat; background-size: cover;}
 #variedades .logo-1865{margin: 120px 0 20px;}
 #variedades .caja-texto{background: rgba(0,0,0,0.5); border-left: 3px solid #fff;}
-#variedades .caja-texto h3{font-family: 'Nexa Bold'; margin: 30px 0; font-size: 20px;}
-#variedades .caja-texto p{font-family: 'Nexa Regular'; font-size: 0.7rem;line-height: 230%;}
+#variedades h3{font-family: 'Nexa Bold'; margin: 30px 0; font-size: 20px;}
+#variedades p{font-family: 'Nexa Regular'; font-size: 0.7rem;line-height: 230%;}
 
 #cabernet{background: url(../img/bg-cabernet.jpg) no-repeat; background-size: cover;}
 #carmenere{background: url(../img/bg-carmenere.jpg) no-repeat; background-size: cover;}
 #malbec{background: url(../img/bg-malbec.jpg) no-repeat; background-size: cover;}
 #sauvignon{background: url(../img/bg-sauvignon.jpg) no-repeat; background-size: cover;}
 #syrah{background: url(../img/bg-syrah.jpg) no-repeat; background-size: cover;}
+
+.vino{ bottom: 0; position: absolute; left: 0; right: 0;}
+.cepa{ margin: 30px 0;}
+.vino h3{font-family: "trajan-pro-3"; font-weight: normal; font-size: 40px; line-height: 100%;}
+.vino p{font-family: 'Nexa Regular'; font-size: 0.7rem; line-height: 190%;}
+.vino p strong{font-family: 'Nexa Bold';}
+.botella{bottom: 0; position: absolute;}
+
+
+
+#cabernet .ficha{top: -60px;}
+#carmenere .ficha{top: -60px;}
+#malbec .ficha{top: -80px;}
+#sauvignon .ficha{top: -80px;}
+#syrah .ficha{top: -50px;}
+
+
+@media only screen and (max-width: 768px) {
+
+	.navbar-brand{max-width: 70%;}
+
+	.navigation{display: none;}
+	#variedades .logo-1865 { margin: 120px 0 20px; }
+	#variedades h3{font-family: 'Nexa Bold'; margin: 90px 0 10px; font-size: 20px;}
+	#variedades p{font-family: 'Nexa Regular'; font-size: 0.7rem;line-height: 160%;}
+
+	#titulo {
+	    position: absolute;
+	    right: auto;
+	    top: 30%;
+	    left: 50%;
+	    -webkit-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	}
+
+	h1 {
+	    font-size: 3rem;
+	}
+	h2 {
+	    font-size: 0.5rem;
+	    padding: 0 7px 0 2px;
+	}
+
+	.vino h3 {
+	    font-size: 24px;
+	}
+	.vino p {
+	    font-size: 0.55rem;
+	}
+
+
+}
+
+
 
