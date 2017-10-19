@@ -9,10 +9,7 @@
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <script src="assets/js/pace.js"></script>
-	<link href="assets/css/pace-theme-flash.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/1865.css?v=2.5">
+    <link rel="stylesheet" href="assets/css/1865.css">
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,7 +25,7 @@
   </head>
 <body data-spy="scroll" data-target="#navbar-example">
 
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top text-uppercase animated slideInDown hide" id="navbar-example">
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top text-uppercase" id="navbar-example">
 		<div class="container">
 			<a class="navbar-brand" href="#home">
 				<img src="assets/img/logo-slogan-head.png" class="img-fluid">
@@ -39,64 +36,44 @@
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link next" data-next="home" href="#home">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
 					</li>
-			          <li class="nav-item dropdown">
-			            <a class="nav-link dropdown-toggle next" data-next="variedades" href="javascript:void(0);" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Variedades</a>
-			            <div class="dropdown-menu" aria-labelledby="dropdown01">
-							<a class="dropdown-item next" data-next="cabernet" href="#">Cabernet Sauvignon</a>
-							<a class="dropdown-item next" data-next="carmenere" href="#">Carmenere</a>
-							<a class="dropdown-item next" data-next="malbec" href="#">Malbec</a>
-							<a class="dropdown-item next" data-next="sauvignon" href="#">Sauvignon Blanc</a>
-							<a class="dropdown-item next" data-next="syrah" href="#">Syrah</a>
-			            </div>
-			          </li>	
+					<li class="nav-item">
+						<a class="nav-link" href="#variedades">Variedades</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	 
-	<div class="navigation hide">
+	<div class="navigation">
 		<ul>
-			<li><a href="#home" 	  class="active next" data-next="home" 	data-toggle="tooltip" data-placement="right" title="Home">Home</a></li>
-			<li><a href="#variedades" class="next" data-next="variedades" 	data-toggle="tooltip" data-placement="right" title="Variedades">Variedades</a></li>
-			<li><a href="#cabernet"   class="next" data-next="cabernet"		data-toggle="tooltip" data-placement="right" title="Cabernet Sauvignon">three</a></li>
-			<li><a href="#carmenere"  class="next" data-next="carmenere"	data-toggle="tooltip" data-placement="right" title="Carmenere">four</a></li>
-			<li><a href="#malbec" 	  class="next" data-next="malbec"		data-toggle="tooltip" data-placement="right" title="Malbec">four</a></li>
-			<li><a href="#sauvignon"  class="next" data-next="sauvignon"	data-toggle="tooltip" data-placement="right" title="Sauvignon Blanc">four</a></li>
-			<li><a href="#syrah" 	  class="next" data-next="syrah"		data-toggle="tooltip" data-placement="right" title="Syrah">four</a></li>
+			<li><a href="#home" class="active" data-toggle="tooltip" data-placement="right" title="Home">Home</a></li>
+			<li><a href="#variedades" 	data-toggle="tooltip" data-placement="right" title="Variedades">Variedades</a></li>
+			<li><a href="#cabernet" 	data-toggle="tooltip" data-placement="right" title="Cabernet Sauvignon">three</a></li>
+			<li><a href="#carmenere" 	data-toggle="tooltip" data-placement="right" title="Carmenere">four</a></li>
+			<li><a href="#malbec" 		data-toggle="tooltip" data-placement="right" title="Malbec">four</a></li>
+			<li><a href="#sauvignon" 	data-toggle="tooltip" data-placement="right" title="Sauvignon Blanc">four</a></li>
+			<li><a href="#syrah" 		data-toggle="tooltip" data-placement="right" title="Syrah">four</a></li>
 		</ul>
 	</div>	
-	  
-    <section id="home" 			class="page termina animated fadeIn hide">
-	    
-		<div id="titulo" class="col-sm-5 hide animated carga1">
-			<img src="assets/img/TITULO.png" class="img-fluid animated fadeInDown">
-<!--
-			<h1 class="animated fadeInDown">PRECISIÓN</h1>
-			<h2 class="text-right animated fadeInDown"><span>desde 1865</span></h2>
--->
-			<p class="animated fadeInUp d-none d-sm-block ">Un vino que nos traslada a 1865, año que la viña San Pedro<br> 
-fue fundada para marcar un hito en la historia del vino chileno.</p>
-			<p class="animated fadeInUp d-none d-sm-block ">Desde entonces nuestra pasión ha sido elaborar un vino con precisión.<br> 
-El resultado, descúbrelo en cada botella.</p>
-			<p class="animated fadeInUp d-none d-sm-block ">Precision in Winemaking</p>
-			
-			
-			<p class="animated fadeInUp d-block d-sm-none">Un vino que nos traslada a 1865, año que la viña San Pedro 
-fue fundada para marcar un hito en la historia del vino chileno.</p>
-			<p class="animated fadeInUp d-block d-sm-none">Desde entonces nuestra pasión ha sido elaborar un vino con precisión. 
-El resultado, descúbrelo en cada botella.</p>
-			<p class="animated fadeInUp d-block d-sm-none">Precision in Winemaking</p>
-			
-		</div>
-		<div class="inicia esquina"></div>
-		<a href="#variedades" id="baja1" class="baja hide carga1 next" data-next="variedades"  ><img src="assets/img/flecha-baja.png" class="img-fluid animated bounceInUp"></a>
 
-    </section>
-	<section id="variedades" 	class="page hide">
+	  
+    <section id="home" 			class="page">
 	    
-	    <div class="container d-none d-sm-block animated">
+		<hgroup id="titulo" class="">
+			<h2 class="text-uppercase">identidad <span>y</span> personalidad <span>trabajada con</span></h2>
+			<h1>PRECISIÓN</h1>
+			<h2 class="text-right text-uppercase"><span>desde su elaboración</span></h2>
+		</hgroup>
+
+		<a href="#variedades" id="baja1" class="baja pagenav__button pagenav__button--cornerbottomright" ><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
+		
+		
+    </section>
+	<section id="variedades" 	class="page">
+	    
+	    <div class="container d-none d-sm-block">
 		    <div class="row">
 		    	<div class="col-4 col-sm-2">
 		    		<img src="assets/img/logo-1865.png" class="img-fluid logo-1865">
@@ -133,16 +110,13 @@ El resultado, descúbrelo en cada botella.</p>
 				</div>
 		    </div>
 	    </div>
-		
-		<div class="inicia esquina"></div>
-		
-		<a href="#home"  class="sube next" data-next="home"  ><img src="assets/img/flecha-sube.png" class="img-fluid animated bounceInUp"></a>
-		<a href="#cabernet" id="baja2" class="baja next" data-next="cabernet" ><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
+
+		<a href="#cabernet" id="baja2" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
 
     </section>
-	<section id="cabernet" 		class="page hide">
+	<section id="cabernet" 		class="page">
 	    
-	   	<div class="vino container animated">
+	   	<div class="vino container">
 	   		<div class="row">
 				<div class="col-sm-6">
 					<div class="row">
@@ -150,7 +124,7 @@ El resultado, descúbrelo en cada botella.</p>
 							<img src="assets/img/botella-cabernet.png" class="img-fluid botella">
 						</div>
 						<div class="col-7 col-sm-7 ml-auto ficha">
-							<div class="row d-none d-sm-block ">
+							<div class="row">
 								<div class="col-6 col-sm-6">
 									<img src="assets/img/logo-1865.png" class="img-fluid logo-1865 negativo">
 								</div>
@@ -168,15 +142,13 @@ El resultado, descúbrelo en cada botella.</p>
 				</div>
 	   		</div>	
 	   	</div>
-		<div class="inicia esquina"></div>
 	   	
-		<a href="#variedades"  class="sube next" data-next="variedades"  ><img src="assets/img/flecha-sube.png" class="img-fluid animated bounceInUp"></a>
-		<a href="#carmenere" id="baja3" class="baja next" data-next="carmenere" ><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
+		<a href="#carmenere" id="baja3" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
 
     </section>
-	<section id="carmenere" 	class="page hide">
+	<section id="carmenere" 	class="page">
 	    
-	   	<div class="vino container animated">
+	   	<div class="vino container">
 	   		<div class="row">
 				<div class="col-sm-6">
 					<div class="row">
@@ -184,7 +156,7 @@ El resultado, descúbrelo en cada botella.</p>
 							<img src="assets/img/botella-cabernet.png" class="img-fluid botella">
 						</div>
 						<div class="col-7 col-sm-7 ml-auto ficha">
-							<div class="row d-none d-sm-block ">
+							<div class="row">
 								<div class="col-6 col-sm-6">
 									<img src="assets/img/logo-1865.png" class="img-fluid logo-1865 negativo">
 								</div>
@@ -202,16 +174,13 @@ El resultado, descúbrelo en cada botella.</p>
 				</div>
 	   		</div>	
 	   	</div>
-	   	
-		<div class="inicia esquina"></div>
 	    
-		<a href="#cabernet"  class="sube next" data-next="cabernet"  ><img src="assets/img/flecha-sube.png" class="img-fluid animated bounceInUp"></a>
-		<a href="#malbec" id="baja4" class="baja next" data-next="malbec" ><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
+		<a href="#malbec" id="baja4" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
 
     </section>
-	<section id="malbec" 		class="page hide">
+	<section id="malbec" 		class="page">
 	    
-	   	<div class="vino container animated">
+	   	<div class="vino container">
 	   		<div class="row">
 				<div class="col-sm-6">
 					<div class="row">
@@ -219,7 +188,7 @@ El resultado, descúbrelo en cada botella.</p>
 							<img src="assets/img/botella-malbec.png" class="img-fluid botella">
 						</div>
 						<div class="col-7 col-sm-7 ml-auto ficha">
-							<div class="row d-none d-sm-block ">
+							<div class="row">
 								<div class="col-6 col-sm-6">
 									<img src="assets/img/logo-1865.png" class="img-fluid logo-1865 negativo">
 								</div>
@@ -237,16 +206,13 @@ El resultado, descúbrelo en cada botella.</p>
 				</div>
 	   		</div>	
 	   	</div>
-	   	
-		<div class="inicia esquina"></div>
 	    
-		<a href="#carmenere"  class="sube next" data-next="carmenere"  ><img src="assets/img/flecha-sube.png" class="img-fluid animated bounceInUp"></a>
-		<a href="#sauvignon" id="baja5" class="baja next" data-next="sauvignon"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
+		<a href="#sauvignon" id="baja5" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
 
     </section>
-	<section id="sauvignon"		class="page hide">
+	<section id="sauvignon" 	class="page">
 	    
-	   	<div class="vino container animated">
+	   	<div class="vino container">
 	   		<div class="row">
 				<div class="col-sm-6">
 					<div class="row">
@@ -254,7 +220,7 @@ El resultado, descúbrelo en cada botella.</p>
 							<img src="assets/img/botella-sauvignon.png" class="img-fluid botella">
 						</div>
 						<div class="col-7 col-sm-7 ml-auto ficha">
-							<div class="row d-none d-sm-block ">
+							<div class="row">
 								<div class="col-6 col-sm-6">
 									<img src="assets/img/logo-1865.png" class="img-fluid logo-1865 negativo">
 								</div>
@@ -271,16 +237,13 @@ El resultado, descúbrelo en cada botella.</p>
 				</div>
 	   		</div>	
 	   	</div>
-	   	
-		<div class="inicia esquina"></div>
 	    
-		<a href="#malbec"  class="sube next" data-next="malbec"  ><img src="assets/img/flecha-sube.png" class="img-fluid animated bounceInUp"></a>
-		<a href="#syrah" id="baja6" class="baja next" data-next="syrah"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
+		<a href="#syrah" id="baja6" class="baja"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
 
     </section>
-	<section id="syrah" 		class="page hide">
+	<section id="syrah" 		class="page">
 	    
-	   	<div class="vino container animated">
+	   	<div class="vino container">
 	   		<div class="row">
 				<div class="col-sm-6">
 					<div class="row">
@@ -288,7 +251,7 @@ El resultado, descúbrelo en cada botella.</p>
 							<img src="assets/img/botella-syrah.png" class="img-fluid botella">
 						</div>
 						<div class="col-7 col-sm-7 ml-auto ficha">
-							<div class="row d-none d-sm-block ">
+							<div class="row">
 								<div class="col-6 col-sm-6">
 									<img src="assets/img/logo-1865.png" class="img-fluid logo-1865 negativo">
 								</div>
@@ -305,10 +268,6 @@ El resultado, descúbrelo en cada botella.</p>
 				</div>
 	   		</div>	
 	   	</div>
-	   	
-		<div class="inicia esquina"></div>
-	    
-		<a href="#sauvignon"  class="sube next" data-next="sauvignon"  ><img src="assets/img/flecha-sube.png" class="img-fluid animated bounceInUp"></a>
 	    
 
     </section>
@@ -318,6 +277,6 @@ El resultado, descúbrelo en cada botella.</p>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <script src="assets/js/1865.js?v=2.5"></script>
+    <script src="assets/js/1865.js"></script>
 </body>
 </html>

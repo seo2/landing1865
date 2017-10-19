@@ -1,11 +1,19 @@
 @import url('../fonts/font.css');
 html,body{height: 100%; width: 100%;}
+body{min-height: 100vh;overflow-x: hidden;}
 
-
-body{background: #000; color: #fff; position: relative; text-transform: uppercase;}
+body{background: #000; color: #fff; position: relative; font-variant: small-caps; overflow: hidden;}
 
 nav{background: rgba(0,0,0,0.5); font-family: 'Nexa Bold'; font-size: 0.8rem;}
+.dropdown-menu{background: rgba(0,0,0,0.5);  font-size: 0.8rem; margin: 0 0 0 -18px;}
+.dropdown-item{color: #fff;}
 
+@media only screen and (min-width: 769px) {
+	.navbar .container{padding: 0 20%;}
+	ul.navbar-nav>li{margin: 0 20px;}
+}
+
+.hide{display: none;}
 .nopadr{padding-right: 0;}
 .negativo{margin-left: -50px;}
 .navigation{
@@ -43,43 +51,77 @@ nav{background: rgba(0,0,0,0.5); font-family: 'Nexa Bold'; font-size: 0.8rem;}
 .tooltip-inner{font-family: 'Nexa Book'; font-size: 0.6rem;}
 
 
-.baja{position: absolute; bottom: 20px;left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%);    width: 40px;}
+.baja{position: absolute; bottom: 20px;left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%);    width: 40px; z-index: 1000;}
+.sube{position: absolute; top: 80px;left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%);    width: 40px; z-index: 1000;}
 
-section{height: 100%; width: 100%; position: relative;}
-#home{background: url(../img/bg-home.jpg) no-repeat; background-size: cover; }
 
-#titulo{position: absolute; right: 4%; top: 30%;}
+section{height: 100%; width: 100%; position: absolute; transition: all 0.5s ease-in-out;}
+.esquina{height: 100%; width: 100%; position: absolute; transition: all 0.5s ease-in-out;bottom: 0; right: 0;}
+
+#home{background: url(../img/Back-Superior.jpg) no-repeat; background-size: cover; }
+#home .esquina{background: url(../img/triangulo-1.jpg) no-repeat; background-size: cover;}
+#titulo{position: absolute; right: 4%; top: 30%; overflow: hidden; z-index: 10;}
+#titulo p{ font-size: 14px; line-height: 160%; font-family: 'Nexa Bold'; letter-spacing: 0.5px;}
+#titulo p:first-of-type{margin-top: 30px;}
 
 h1 {font-family: "trajan-pro-3";font-size: 6rem;}
 h2{font-family: 'Nexa Bold'; font-size: 1.2rem; padding: 0 14px 0 6px;}
 h2 span{font-family: 'Nexa Light';}
 
-#variedades{background: url(../img/bg-variedades.jpg) no-repeat; background-size: cover;}
+#variedades{background: url(../img/bg-variedadesv2.jpg) no-repeat; background-size: cover;}
+#variedades .esquina{background-image: url(../img/Back-Inferior.jpg); background-size: cover;}
 #variedades .logo-1865{margin: 120px 0 20px;}
-#variedades .caja-texto{background: rgba(0,0,0,0.5); border-left: 3px solid #fff;}
+#variedades .caja-texto{background: rgba(0,0,0,0.5);}
 #variedades h3{font-family: 'Nexa Bold'; margin: 30px 0; font-size: 20px;}
-#variedades p{font-family: 'Nexa Regular'; font-size: 0.7rem;line-height: 230%;}
+#variedades p{ font-family: 'Nexa Bold'; font-size: 14px; line-height: 200%;}
 
-#cabernet{background: url(../img/bg-cabernet.jpg) no-repeat; background-size: cover;}
-#carmenere{background: url(../img/bg-carmenere.jpg) no-repeat; background-size: cover;}
-#malbec{background: url(../img/bg-malbec.jpg) no-repeat; background-size: cover;}
-#sauvignon{background: url(../img/bg-sauvignon.jpg) no-repeat; background-size: cover;}
-#syrah{background: url(../img/bg-syrah.jpg) no-repeat; background-size: cover;}
+#cabernet{background: url(../img/bg-cabernetv2.jpg) no-repeat; background-size: cover;}
+#cabernet .esquina{background-image: url(../img/Cabernet.jpg); background-size: cover;}
+#carmenere{background: url(../img/bg-cabernetv2.jpg) no-repeat; background-size: cover;}
+#carmenere .esquina{background-image: url(../img/triangulo-4.jpg); background-size: cover; background-position-x: 500px;}
+#malbec{background: url(../img/bg-cabernetv2.jpg) no-repeat; background-size: cover;}
+#malbec .esquina{background-image: url(../img/Malbec.jpg); background-size: cover;}
+#sauvignon{background: url(../img/bg-cabernetv2.jpg) no-repeat; background-size: cover;}
+#sauvignon .esquina{background-image: url(../img/Sauvignon-Blanc.jpg); background-size: cover;}
+#syrah{background: url(../img/bg-cabernetv2.jpg) no-repeat; background-size: cover;}
+#syrah .esquina{background-image: url(../img/triangulo-7.jpg); background-size: cover; background-position-x: 500px;}
 
 .vino{ bottom: 0; position: absolute; left: 0; right: 0;}
 .cepa{ margin: 30px 0;}
 .vino h3{font-family: "trajan-pro-3"; font-weight: normal; font-size: 40px; line-height: 100%;}
-.vino p{font-family: 'Nexa Regular'; font-size: 0.7rem; line-height: 190%;}
+.vino p{font-family: 'Nexa Regular'; font-size: 14px; line-height: 190%;}
 .vino p strong{font-family: 'Nexa Bold';}
 .botella{bottom: 0; position: absolute;}
 
-
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
 
 #cabernet .ficha{top: -60px;}
 #carmenere .ficha{top: -60px;}
 #malbec .ficha{top: -80px;}
 #sauvignon .ficha{top: -80px;}
 #syrah .ficha{top: -50px;}
+
+.page{
+	-webkit-clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+	clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+}
+
+.inicia{
+	-webkit-clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+	clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+}
+
+.triangulo{
+	-webkit-clip-path: polygon(100% 20%, 40% 100%, 100% 100%);
+	clip-path: polygon(100% 20%, 40% 100%, 100% 100%);
+}
+
+.termina{
+	-webkit-clip-path: polygon(100% -170%, -60% 100%, 100% 100%);
+	clip-path: polygon(100% -170%, -60% 100%, 100% 100%);
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -89,12 +131,13 @@ h2 span{font-family: 'Nexa Light';}
 	.navigation{display: none;}
 	#variedades .logo-1865 { margin: 120px 0 20px; }
 	#variedades h3{font-family: 'Nexa Bold'; margin: 90px 0 10px; font-size: 20px;}
-	#variedades p{font-family: 'Nexa Regular'; font-size: 0.7rem;line-height: 160%;}
+	#variedades p{font-family: 'Nexa Regular'; font-size: 0.6rem;line-height: 160%;}
 
 	#titulo {
 	    position: absolute;
 	    right: auto;
-	    top: 30%;
+	    top: auto;
+		bottom: 10%;
 	    left: 50%;
 	    -webkit-transform: translateX(-50%);
 	    transform: translateX(-50%);
@@ -104,8 +147,9 @@ h2 span{font-family: 'Nexa Light';}
 	    font-size: 3rem;
 	}
 	h2 {
-	    font-size: 0.5rem;
+	    font-size: 0.9rem;
 	    padding: 0 7px 0 2px;
+	    margin-bottom: 40px;
 	}
 
 	.vino h3 {
@@ -115,7 +159,50 @@ h2 span{font-family: 'Nexa Light';}
 	    font-size: 0.55rem;
 	}
 
+	.triangulo {
+	    -webkit-clip-path: polygon(100% 40%, -20% 100%, 100% 100%);
+	    clip-path: polygon(100% 40%, -20% 100%, 100% 100%);
+	}
+	
+	.termina{
+		-webkit-clip-path: polygon(100% -170%, -60% 100%, 100% 100%);
+		clip-path: polygon(100% -170%, -60% 100%, 100% 100%);
+	}
 
+	#titulo p:first-of-type {
+	    margin-top: 0;
+	}
+	
+	#titulo p {
+	    font-size: 7px;
+	    padding-left: 0;
+	    line-height: 200%;
+	    width: 60%;
+	    float: right;
+	    clear: both;
+	    margin: 5px 0;
+	}
+	
+	
+	#variedades { background: url(../img/bg-variedadesv2.jpg) no-repeat right;}
+	#variedades .esquina {
+	    background-size: 180%;
+	    background-position: bottom left;
+	}
+	
+	.botella {
+	    bottom: 15%;
+	    position: absolute;
+	}
+	#cabernet .ficha {
+	    top: -100px;
+	    padding-left: 0;
+	}	
+	.ficha{ z-index: 10;}
+	#cabernet .esquina {
+	    background-size: 180%;
+	    background-position: bottom left;
+	}
 }
 
 
