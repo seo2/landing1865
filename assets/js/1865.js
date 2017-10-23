@@ -38,6 +38,9 @@ $('.next').on('click',function(){
 function cargaSeccion(next){
 	if(pagina!=next){
 		
+		
+		$('#'+pagina).css('z-index','0');
+		$('#'+next).css('z-index','100');
 		$('#'+next).removeClass('hide');
 		$('.navigation ul li a').removeClass('active');
 		$('.navigation ul li a').each(function(){
@@ -45,8 +48,6 @@ function cargaSeccion(next){
 				$(this).addClass('active');
 			}
 		});		
-		
-		$('#'+next).css('z-index','2');
 		if(pagina=="home"){
 			$('#titulo').addClass('fadeOutLeftBig');
 		}	
@@ -56,7 +57,7 @@ function cargaSeccion(next){
 		
 		$('#'+pagina+' .container').addClass('fadeOutLeftBig');
 		setTimeout(function(){
-			 $('#'+pagina+' .esquina').css({'background-position-x': '0'});
+			 $('#'+pagina+' .esquina').css({'background-position': 'bottom right'});
 			 $('#'+pagina+' .esquina').addClass('termina');
 		}, 100);
 		
@@ -73,6 +74,8 @@ function cargaSeccion(next){
 			pagina 		= next;
 			limpia(oldpagina);
 		}, 900);
+	}else{
+		ok=1;
 	}
 };
 
@@ -84,7 +87,7 @@ function limpia(old){
 		$('#titulo').removeClass('fadeOutLeftBig');
 		$('.carga1').addClass('hide');
 	}else if(old=="carmenere" || old=="syrah"){
-		 $('#'+old+' .esquina').css({'background-position-x': '500px'});
+// 		 $('#'+old+' .esquina').css({'background-position-x': '500px'});
 	}
 	
 	$('#'+old+' .esquina').removeClass('triangulo');	
@@ -92,5 +95,141 @@ function limpia(old){
 	$('#'+old+' .container').removeClass('fadeOutLeftBig');
 	$('#'+old).removeClass('termina');
 	$('#'+old).addClass('hide');
-	
+	ok=1;
 };
+
+
+
+var ok = 1;
+
+$(document).keydown(  function(e) {
+	
+	if(ok==1){
+    switch (e.which) {
+	    
+	    case 38: // up arrow
+			if(pagina=='syrah'){
+				next = 'sauvignon';
+			}else if(pagina=='sauvignon'){
+				next = 'malbec';
+			}else if(pagina=='malbec'){
+				next = 'carmenere';
+			}else if(pagina=='carmenere'){
+				next = 'cabernet';
+			}else if(pagina=='cabernet'){
+				next = 'variedades';
+			}else if(pagina=='variedades'){
+				next = 'home';
+			}
+			 ok = 0;
+			cargaSeccion(next);
+	        break;
+	    case 40: // down arrow
+			if(pagina=='home'){
+				next = 'variedades';
+			}else if(pagina=='variedades'){
+				next = 'cabernet';
+			}else if(pagina=='cabernet'){
+				next = 'carmenere';
+			}else if(pagina=='carmenere'){
+				next = 'malbec';
+			}else if(pagina=='malbec'){
+				next = 'sauvignon';
+			}else if(pagina=='sauvignon'){
+				next = 'syrah';
+			}
+			 ok = 0;
+			cargaSeccion(next);
+	        break;
+	    }		
+	}
+
+}) ;
+
+
+$(window).on('mousewheel DOMMouseScroll',function(e) {
+	if(ok==1){
+		if(e.originalEvent.detail > 0 || e.originalEvent.wheelDelta>0) {
+	        //scroll down
+	        console.log('down');
+			if(pagina=='syrah'){
+				next = 'sauvignon';
+			}else if(pagina=='sauvignon'){
+				next = 'malbec';
+			}else if(pagina=='malbec'){
+				next = 'carmenere';
+			}else if(pagina=='carmenere'){
+				next = 'cabernet';
+			}else if(pagina=='cabernet'){
+				next = 'variedades';
+			}else if(pagina=='variedades'){
+				next = 'home';
+			}else if(pagina=='home'){
+				next = 'home';
+			}
+	    }else if(e.originalEvent.detail == 0 || e.originalEvent.wheelDelta == 0) {
+	        //scroll up
+	        console.log('up');
+			if(pagina=='home'){
+				next = 'variedades';
+			}else if(pagina=='variedades'){
+				next = 'cabernet';
+			}else if(pagina=='cabernet'){
+				next = 'carmenere';
+			}else if(pagina=='carmenere'){
+				next = 'malbec';
+			}else if(pagina=='malbec'){
+				next = 'sauvignon';
+			}else if(pagina=='sauvignon'){
+				next = 'syrah';
+			}else if(pagina=='syrah'){
+				next = 'syrah';
+			}
+	    }
+
+		ok = 0;
+		cargaSeccion(next);
+	}
+	//prevent page fom scrolling
+    return false;
+});
+
+
+/*
+$('.page-left, .page-right').on('mousewheel', $.debounce( 250, function(event, delta) {
+    var windowHeight = $(window).height();
+    if (delta < 0) {
+        prevProject();
+    }
+    if (delta > 0) {
+        nextProject();
+    }
+}) );
+*/
+
+  
+  
+  
+  
+   $(function(){ 
+     var navMain = $(".navbar-collapse"); // avoid dependency on #id
+     // "a:not([data-toggle])" - to avoid issues caused
+     // when you have dropdown inside navbar
+     navMain.on("click", "a:not([data-toggle])", null, function () {
+        navMain.collapse('hide');
+		$('#navbar-example').css('background','rgba(0,0,0,0.5)');
+		$('.navbar-toggler').removeClass('collapsed');
+     });
+     
+    $('.navbar-toggler').on('click',function(){
+	    if($(this).hasClass('collapsed')){
+		    $('#navbar-example').css('background','rgba(0,0,0,0.5)');
+	    }else{
+		    $('#navbar-example').css('background','rgba(0,0,0,1)');
+	    }
+	    
+    }); 
+       
+     
+     
+ });
