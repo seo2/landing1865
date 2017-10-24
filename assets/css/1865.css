@@ -16,6 +16,7 @@ nav{background: rgba(0,0,0,0.5); font-family: 'Nexa Bold'; font-size: 0.8rem; tr
 .hide{display: none;}
 .nopadr{padding-right: 0;}
 .negativo{margin-left: -50px;}
+/*
 .navigation{
 	-webkit-backface-visibility: hidden;
 	z-index: 1000;
@@ -24,10 +25,29 @@ nav{background: rgba(0,0,0,0.5); font-family: 'Nexa Bold'; font-size: 0.8rem; tr
 	left: 20px;
 	margin-top: -40px;
 }
+*/
+.navigation {
+    -webkit-backface-visibility: hidden;
+    z-index: 1000;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    margin-top: -40px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
 .navigation ul{padding: 0; margin: 0; list-style: none;}
 
+/*
 .navigation li{
 	height: 50px;
+}
+*/
+
+.navigation li {
+    float: left;
+    width: 50px;
 }
 
 .navigation a{
@@ -51,9 +71,30 @@ nav{background: rgba(0,0,0,0.5); font-family: 'Nexa Bold'; font-size: 0.8rem; tr
 .tooltip-inner{font-family: 'Nexa Book'; font-size: 0.6rem;}
 
 
+/*
 .baja{position: absolute; bottom: 20px;left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%);    width: 40px; z-index: 1000;}
 .sube{position: absolute; top: 80px;left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%);    width: 40px; z-index: 1000;}
+*/
 
+.baja {
+    position: absolute;
+    bottom: 50%;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 20px;
+    z-index: 1000;
+}
+
+.sube {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 20px;
+    z-index: 1000;
+}
 
 section{height: 100%; width: 100%; position: absolute; transition: all 0.5s ease-in-out;}
 .esquina{height: 100%; width: 100%; position: absolute; transition: all 0.5s ease-in-out;bottom: 0; right: 0;background-position: bottom right;}
@@ -61,8 +102,11 @@ section{height: 100%; width: 100%; position: absolute; transition: all 0.5s ease
 #home{background: url(../img/Back-Superior.jpg) no-repeat; background-size: cover; }
 #home .esquina{background-image: url(../img/triangulo-1.jpg); background-size: cover;}
 #titulo{position: absolute; right: 4%; top: 30%; overflow: hidden; z-index: 10;}
+#cajatitulo{  background: rgba(0,0,0,0.5);padding: 15px; margin-top: 20px;}
+
+
 #titulo p{ font-size: 14px; line-height: 160%; font-family: 'Nexa Bold'; letter-spacing: 0.5px;}
-#titulo p:first-of-type{margin-top: 30px;}
+
 
 h1 {font-family: "trajan-pro-3";font-size: 6rem;}
 h2{font-family: 'Nexa Bold'; font-size: 1.2rem; padding: 0 14px 0 6px;}
@@ -78,9 +122,9 @@ h2 span{font-family: 'Nexa Light';}
 #cabernet{background: url(../img/bg-cabernetv2.jpg) no-repeat; background-size: cover;}
 #cabernet .esquina{background-image: url(../img/Cabernet.jpg); background-size: cover;}
 #carmenere{background: url(../img/bg-cabernetv2.jpg) no-repeat; background-size: cover;}
-#carmenere .esquina{background-image: url(../img/triangulo-4.jpg); background-size: cover;/*  background-position-x: 500px; */}
+#carmenere .esquina{background-image: url(../img/triangulo-4.jpg?ver=2); background-size: cover;/*  background-position-x: 500px; */}
 #malbec{background: url(../img/bg-cabernetv2.jpg) no-repeat; background-size: cover;}
-#malbec .esquina{background-image: url(../img/Malbec.jpg); background-size: cover;}
+#malbec .esquina{background-image: url(../img/Malbec.jpg?ver=2); background-size: cover;}
 #sauvignon{background: url(../img/bg-cabernetv2.jpg) no-repeat; background-size: cover;}
 #sauvignon .esquina{background-image: url(../img/Sauvignon-Blanc.jpg); background-size: cover;}
 #syrah{background: url(../img/bg-cabernetv2.jpg) no-repeat; background-size: cover;}
@@ -149,6 +193,7 @@ h2 span{font-family: 'Nexa Light';}
 	   padding: 15px;
 	   overflow: hidden;
 	}
+	#cajatitulo{  background: none;padding: 0; }
 	
 	#titulo img{margin-bottom: 20px;}
 

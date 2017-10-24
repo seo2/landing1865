@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <script src="assets/js/pace.js"></script>
 	<link href="assets/css/pace-theme-flash.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/1865.css?v=2.6">
+    <link rel="stylesheet" href="assets/css/1865.css?v=2.6.3">
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -58,13 +58,13 @@
 	 
 	<div class="navigation hide">
 		<ul>
-			<li><a href="#home" 	  class="active next" data-next="home" 	data-toggle="tooltip" data-placement="right" title="Home">Home</a></li>
-			<li><a href="#variedades" class="next" data-next="variedades" 	data-toggle="tooltip" data-placement="right" title="Variedades">Variedades</a></li>
-			<li><a href="#cabernet"   class="next" data-next="cabernet"		data-toggle="tooltip" data-placement="right" title="Cabernet Sauvignon">three</a></li>
-			<li><a href="#carmenere"  class="next" data-next="carmenere"	data-toggle="tooltip" data-placement="right" title="Carmenere">four</a></li>
-			<li><a href="#malbec" 	  class="next" data-next="malbec"		data-toggle="tooltip" data-placement="right" title="Malbec">four</a></li>
-			<li><a href="#sauvignon"  class="next" data-next="sauvignon"	data-toggle="tooltip" data-placement="right" title="Sauvignon Blanc">four</a></li>
-			<li><a href="#syrah" 	  class="next" data-next="syrah"		data-toggle="tooltip" data-placement="right" title="Syrah">four</a></li>
+			<li><a href="#home" 	  class="active next" data-next="home" 	data-toggle="tooltip" data-placement="top" title="Home">Home</a></li>
+			<li><a href="#variedades" class="next" data-next="variedades" 	data-toggle="tooltip" data-placement="top" title="Variedades">Variedades</a></li>
+			<li><a href="#cabernet"   class="next" data-next="cabernet"		data-toggle="tooltip" data-placement="top" title="Cabernet Sauvignon">three</a></li>
+			<li><a href="#carmenere"  class="next" data-next="carmenere"	data-toggle="tooltip" data-placement="top" title="Carmenere">four</a></li>
+			<li><a href="#malbec" 	  class="next" data-next="malbec"		data-toggle="tooltip" data-placement="top" title="Malbec">four</a></li>
+			<li><a href="#sauvignon"  class="next" data-next="sauvignon"	data-toggle="tooltip" data-placement="top" title="Sauvignon Blanc">four</a></li>
+			<li><a href="#syrah" 	  class="next" data-next="syrah"		data-toggle="tooltip" data-placement="top" title="Syrah">four</a></li>
 		</ul>
 	</div>	
 	  
@@ -72,21 +72,23 @@
 	    
 		<div id="titulo" class="col-sm-5 hide animated carga1">
 			<img src="assets/img/TITULO.png" class="img-fluid animated fadeInDown">
-			<p class="animated fadeInUp d-none d-sm-block ">Un vino que nos traslada a 1865, año que la viña San Pedro<br> 
-fue fundada para marcar un hito en la historia del vino chileno.</p>
-			<p class="animated fadeInUp d-none d-sm-block ">Desde entonces nuestra pasión ha sido elaborar un vino con precisión.<br> 
-El resultado, descúbrelo en cada botella.</p>
-			<p class="animated fadeInUp d-none d-sm-block ">Precision in Winemaking</p>
-			
-			<p class="animated fadeInUp d-block d-sm-none">Un vino que nos traslada a 1865, año que la viña San Pedro 
-fue fundada para marcar un hito en la historia del vino chileno.</p>
-			<p class="animated fadeInUp d-block d-sm-none">Desde entonces nuestra pasión ha sido elaborar un vino con precisión. 
-El resultado, descúbrelo en cada botella.</p>
-			<p class="animated fadeInUp d-block d-sm-none">Precision in Winemaking</p>
+			<div id="cajatitulo">
+				<p class="animated fadeInUp d-none d-sm-block ">Un vino que nos traslada a 1865, año que la viña San Pedro<br> 
+	fue fundada para marcar un hito en la historia del vino chileno.</p>
+				<p class="animated fadeInUp d-none d-sm-block ">Desde entonces nuestra pasión ha sido elaborar un vino con precisión.<br> 
+	El resultado, descúbrelo en cada botella.</p>
+				<p class="animated fadeInUp d-none d-sm-block ">Precision in Winemaking</p>
+				
+				<p class="animated fadeInUp d-block d-sm-none">Un vino que nos traslada a 1865, año que la viña San Pedro 
+	fue fundada para marcar un hito en la historia del vino chileno.</p>
+				<p class="animated fadeInUp d-block d-sm-none">Desde entonces nuestra pasión ha sido elaborar un vino con precisión. 
+	El resultado, descúbrelo en cada botella.</p>
+				<p class="animated fadeInUp d-block d-sm-none">Precision in Winemaking</p>
+			</div>
 			
 		</div>
 		<div class="inicia esquina"></div>
-		<a href="#variedades" id="baja1" class="baja hide carga1 next" data-next="variedades"  ><img src="assets/img/flecha-baja.png" class="img-fluid animated bounceInUp"></a>
+		<a href="#variedades" id="baja1" class="baja hide carga1 next" data-next="variedades"  ><img src="assets/img/flecha-next.png" class="img-fluid animated bounceInRight"></a>
 
     </section>
 	<section id="variedades" 	class="page hide">
@@ -131,8 +133,8 @@ El resultado, descúbrelo en cada botella.</p>
 		
 		<div class="inicia esquina"></div>
 		
-		<a href="#home"  class="sube next" data-next="home"  ><img src="assets/img/flecha-sube.png" class="img-fluid animated bounceInUp"></a>
-		<a href="#cabernet" id="baja2" class="baja next" data-next="cabernet" ><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
+		<a href="#home"  class="sube next" data-next="home"  ><img src="assets/img/flecha-prev.png" class="img-fluid animated bounceInLeft"></a>
+		<a href="#cabernet" id="baja2" class="baja next" data-next="cabernet" ><img src="assets/img/flecha-next.png" class="img-fluid"></a>
 
     </section>
 	<section id="cabernet" 		class="page hide">
@@ -166,8 +168,8 @@ El resultado, descúbrelo en cada botella.</p>
 	   	</div>
 		<div class="inicia esquina"></div>
 	   	
-		<a href="#variedades"  class="sube next" data-next="variedades"  ><img src="assets/img/flecha-sube.png" class="img-fluid animated bounceInUp"></a>
-		<a href="#carmenere" id="baja3" class="baja next" data-next="carmenere" ><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
+		<a href="#variedades"  class="sube next" data-next="variedades"  ><img src="assets/img/flecha-prev.png" class="img-fluid animated"></a>
+		<a href="#carmenere" id="baja3" class="baja next" data-next="carmenere" ><img src="assets/img/flecha-next.png" class="img-fluid"></a>
 
     </section>
 	<section id="carmenere" 	class="page hide">
@@ -177,7 +179,7 @@ El resultado, descúbrelo en cada botella.</p>
 				<div class="col-sm-6">
 					<div class="row">
 						<div class="col-4 col-sm-4">
-							<img src="assets/img/botella-cabernet.png" class="img-fluid botella">
+							<img src="assets/img/botella-carmenere.png" class="img-fluid botella">
 						</div>
 						<div class="col-7 col-sm-7 ml-auto ficha">
 							<div class="row d-none d-sm-block ">
@@ -202,8 +204,8 @@ El resultado, descúbrelo en cada botella.</p>
 	   	
 		<div class="inicia esquina"></div>
 	    
-		<a href="#cabernet"  class="sube next" data-next="cabernet"  ><img src="assets/img/flecha-sube.png" class="img-fluid animated bounceInUp"></a>
-		<a href="#malbec" id="baja4" class="baja next" data-next="malbec" ><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
+		<a href="#cabernet"  class="sube next" data-next="cabernet"  ><img src="assets/img/flecha-prev.png" class="img-fluid animated"></a>
+		<a href="#malbec" id="baja4" class="baja next" data-next="malbec" ><img src="assets/img/flecha-next.png" class="img-fluid"></a>
 
     </section>
 	<section id="malbec" 		class="page hide">
@@ -238,8 +240,8 @@ El resultado, descúbrelo en cada botella.</p>
 	   	
 		<div class="inicia esquina"></div>
 	    
-		<a href="#carmenere"  class="sube next" data-next="carmenere"  ><img src="assets/img/flecha-sube.png" class="img-fluid animated bounceInUp"></a>
-		<a href="#sauvignon" id="baja5" class="baja next" data-next="sauvignon"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
+		<a href="#carmenere"  class="sube next" data-next="carmenere"  ><img src="assets/img/flecha-prev.png" class="img-fluid animated"></a>
+		<a href="#sauvignon" id="baja5" class="baja next" data-next="sauvignon"><img src="assets/img/flecha-next.png" class="img-fluid"></a>
 
     </section>
 	<section id="sauvignon"		class="page hide">
@@ -274,8 +276,8 @@ El resultado, descúbrelo en cada botella.</p>
 	   	
 		<div class="inicia esquina"></div>
 	    
-		<a href="#malbec"  class="sube next" data-next="malbec"  ><img src="assets/img/flecha-sube.png" class="img-fluid animated bounceInUp"></a>
-		<a href="#syrah" id="baja6" class="baja next" data-next="syrah"><img src="assets/img/flecha-baja.png" class="img-fluid"></a>
+		<a href="#malbec"  class="sube next" data-next="malbec"  ><img src="assets/img/flecha-prev.png" class="img-fluid animated"></a>
+		<a href="#syrah" id="baja6" class="baja next" data-next="syrah"><img src="assets/img/flecha-next.png" class="img-fluid"></a>
 
     </section>
 	<section id="syrah" 		class="page hide">
@@ -310,7 +312,7 @@ El resultado, descúbrelo en cada botella.</p>
 	   	
 		<div class="inicia esquina"></div>
 	    
-		<a href="#sauvignon"  class="sube next" data-next="sauvignon"  ><img src="assets/img/flecha-sube.png" class="img-fluid animated bounceInUp"></a>
+		<a href="#sauvignon"  class="sube next" data-next="sauvignon"  ><img src="assets/img/flecha-prev.png" class="img-fluid animated"></a>
 	    
 
     </section>

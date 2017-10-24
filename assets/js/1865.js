@@ -38,6 +38,8 @@ $('.next').on('click',function(){
 function cargaSeccion(next){
 	if(pagina!=next){
 		
+		ga('set', 'page', '/'+next+'.html');
+		ga('send', 'pageview');
 		
 		$('#'+pagina).css('z-index','0');
 		$('#'+next).css('z-index','100');
@@ -124,6 +126,40 @@ $(document).keydown(  function(e) {
 			 ok = 0;
 			cargaSeccion(next);
 	        break;
+	   case 37: // up arrow
+			if(pagina=='syrah'){
+				next = 'sauvignon';
+			}else if(pagina=='sauvignon'){
+				next = 'malbec';
+			}else if(pagina=='malbec'){
+				next = 'carmenere';
+			}else if(pagina=='carmenere'){
+				next = 'cabernet';
+			}else if(pagina=='cabernet'){
+				next = 'variedades';
+			}else if(pagina=='variedades'){
+				next = 'home';
+			}
+			 ok = 0;
+			cargaSeccion(next);
+	        break;    
+	    case 39: // down arrow
+			if(pagina=='home'){
+				next = 'variedades';
+			}else if(pagina=='variedades'){
+				next = 'cabernet';
+			}else if(pagina=='cabernet'){
+				next = 'carmenere';
+			}else if(pagina=='carmenere'){
+				next = 'malbec';
+			}else if(pagina=='malbec'){
+				next = 'sauvignon';
+			}else if(pagina=='sauvignon'){
+				next = 'syrah';
+			}
+			 ok = 0;
+			cargaSeccion(next);
+	        break;  
 	    case 40: // down arrow
 			if(pagina=='home'){
 				next = 'variedades';
@@ -193,28 +229,11 @@ $(window).on('mousewheel DOMMouseScroll',function(e) {
 	//prevent page fom scrolling
     return false;
 });
-
-
-/*
-$('.page-left, .page-right').on('mousewheel', $.debounce( 250, function(event, delta) {
-    var windowHeight = $(window).height();
-    if (delta < 0) {
-        prevProject();
-    }
-    if (delta > 0) {
-        nextProject();
-    }
-}) );
-*/
-
-  
-  
   
   
    $(function(){ 
-     var navMain = $(".navbar-collapse"); // avoid dependency on #id
-     // "a:not([data-toggle])" - to avoid issues caused
-     // when you have dropdown inside navbar
+     var navMain = $(".navbar-collapse"); 
+
      navMain.on("click", "a:not([data-toggle])", null, function () {
         navMain.collapse('hide');
 		$('#navbar-example').css('background','rgba(0,0,0,0.5)');
